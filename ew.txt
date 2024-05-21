@@ -1,0 +1,45 @@
+# Spring Boot SEP Interaction Demo
+
+This project is a simple Spring Boot application demonstrating interaction with SEP through request sending and response receiving in asynchronous mode. It includes examples of Rest and MQ clients, as well as a simple booking service that generates sample requests, sends them to SEP, and processes the responses. The unit tests cover three different scenarios.
+
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Running the Tests](#running-the-tests)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Prerequisites
+- JDK 11 or higher
+- Maven 3.6.3 or higher
+
+## Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/your-repo.git
+    cd your-repo
+    ```
+
+2. Build the project:
+    ```bash
+    mvn clean install
+    ```
+
+## Usage
+1. Start the Spring Boot application:
+    ```bash
+    mvn spring-boot:run
+    ```
+
+2. The application will be available at `http://localhost:8080`.
+
+3. Use the following endpoints to interact with the booking service:
+    - **POST** `/api/bookings` - Send a booking request
+    - **GET** `/api/bookings/{id}` - Get booking status by ID
+
+## Running the Tests
+To run the unit tests, use the following command:
+```bash
+mvn test
