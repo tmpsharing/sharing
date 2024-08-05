@@ -1,0 +1,49 @@
+src
+├── main
+│   ├── java
+│   │   └── com
+│   │       └── db
+│   │           └── sdda
+│   │               └── sep
+│   │                   └── example
+│   │                       ├── bookings
+│   │                       │   ├── mq
+│   │                       │   │   └── MqClient.java
+│   │                       │   ├── rest
+│   │                       │   │   ├── CallbackController.java
+│   │                       │   │   └── RestClient.java
+│   │                       │   └── service
+│   │                       │       ├── BookingService.java
+│   │                       │       ├── BookingRequestSender.java
+│   │                       │       └── CallbackResponseProcessor.java
+│   │                       ├── conf
+│   │                       │   ├── props
+│   │                       │   │   ├── ActiveMqProperties.java
+│   │                       │   │   ├── IbmMqProperties.java
+│   │                       │   │   ├── RestClientProperties.java
+│   │                       │   ├── MqConfiguration.java
+│   │                       │   └── RestConfiguration.java
+│   │                       ├── controller
+│   │                       │   └── DemoRestController.java
+│   │                       ├── model
+│   │                       │   ├── BookingRequest.java
+│   │                       │   ├── BookingRequestType.java
+│   │                       │   ├── RawResponse.java
+│   │                       │   └── RequestAttributes.java
+│   │                       ├── util
+│   │                       │   ├── BookingRequestUtil.java
+│   │                       └── Application.java
+│   └── resources
+│       ├── application.yaml
+│       └── dummyBookingRequestBody.json
+└── test
+    └── java
+        └── com
+            └── db
+                └── sdda
+                    └── sep
+                        └── example
+                            ├── MqFlowTests.java
+                            ├── RestAsyncFlowTests.java
+                            ├── RestSyncFlowTests.java
+                            └── SepBookingIntegrationBaseTest.java
